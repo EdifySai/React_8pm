@@ -1,0 +1,110 @@
+ES6: ECMA Script - V6
+
+let, var, const: 
+
+
+var:   local, global 
+
+let:   block scoped variables
+
+
+    function f1() {
+            var a = 100; // local variable
+            console.log(a); // 100
+
+            if (a < 200) {
+                let a = 900; // block scoped variable
+                console.log(a); // 900
+            }
+            console.log(a); // 100
+        }
+        f1();
+
+
+const:  is used to create variables where the data cannot be reassigned. 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        const arr = [1, 2, 3, 4];
+        arr.push(200);
+        arr.push(100);
+        console.log(arr.length); // 4 or 6  or error? 
+
+        arr = [];
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+Problem Statement: 
+
+create an object with 2 keys , assign the object to a const and try modifying 
+the object by adding a new key - finally we should have 3 keys. 
+
+const dog = {
+    legs : 4,
+    sound : "bark"
+}
+
+dog.food = "omnivorous"
+
+console.log(dog)
+
+Arrow Functions: 
+
+An arrow function is a syntactical change in es6 for the regular functions.
+
+Arrow functions help reduce few number of lines of code.
+
+ function square(num) {
+            return num * num;
+        }
+        console.log(square(10));
+        var sqr = num => num * num;
+        console.log(sqr(2));
+
+Default parameter values: to provide a default value to the function parameter.
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <script>
+
+        //es5
+        function f1(a, b) {
+            if (a == undefined) {
+                a = 200;
+            }
+            if (b == undefined) {
+                b = 100;
+            }
+            console.log(a, b);
+        }
+        f1();
+        // es6 
+        function f2(a = 16, b = 20) {
+            console.log(a, b);
+        }
+        f2();
+    </script>
+</body>
+
+</html>
+
+
+
