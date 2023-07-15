@@ -1,0 +1,135 @@
+Rest parameters:  used to store the rest parmeters passed as arguments to a function.
+
+ function f1(a, b, ...v) {
+            console.log(a, b);
+            console.log(v);
+        }
+        f1(10, 20, 30, 40, 50);
+
+spread operator:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+        function f1(a, b, c, d, ...restparams) {
+            console.log(a);
+            console.log(restparams);
+        }
+        var arr = [10, 20, 30, 40, 5, 7, 7];
+        //es5
+        f1(arr[0], arr[1], arr[2], arr[3]);
+        //es6
+        f1(...arr);
+    </script>
+</body>
+
+</html>
+
+
+
+PS: 
+
+Create a function with 3 params and take an array of 5 value and pass them through 
+spread operator, additional values coming from spread operator should be gathered
+using rest parameter.
+
+
+function myFun(a,b,c,...x) {
+    console.log(a,b,c);
+    console.log(x)
+}
+
+arr = [10,20,30,40,50]
+myFun(...arr)
+
+
+String Interpolation: allows to write free style to text in multiple lines. 
+
+Problem Statement:
+
+    Hello Team, 
+
+                Monday we have team lunch. please make a visit to office. 
+
+    Thanks,
+    Manager
+
+  var str = " Hello Team, \n\n\n\t\t\t\t Monday we have team lunch. please make a visit to office. \n\n\t Thanks,\n\t Manager";
+        console.log(str);
+
+
+
+ var str = ` Hello Team, 
+
+                          
+                          
+                          
+                        
+                              Monday we have team lunch. please make a visit to office. 
+
+                Thanks,
+                Manager`
+            ;
+        console.log(str);
+
+
+Custom Interpolation:
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        var team = "Dev Team";
+        var manager = "Krishna";
+
+        var str = ` Hello ${team}, 
+
+                          
+                          
+    
+                        
+                              Monday we have team lunch at . please make a visit to office. 
+
+                Thanks,
+                ${manager}`
+            ;
+        console.log(str);
+
+        /*
+
+Hello Team,
+
+                Monday we have team lunch. please make a visit to office.
+
+    Thanks,
+    Manager
+
+
+        */
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+var employees= [{
+          team: "CRM", 
+          manager: "Venkat"
+}]
