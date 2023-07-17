@@ -1,0 +1,47 @@
+React Env Set up:
+
+1. Node.js - https://nodejs.org/en 
+
+commands:   node -v ,   npm -v 
+
+
+2. create react application: 
+
+to create project: npx create-react-app firstapp
+
+
+to run:  npm start
+
+
+Exports and Imports: 
+
+ES5:
+
+file1.js 
+
+   function f1(){
+      console.log("f1()");
+   }
+
+file2.js 
+
+  f1();
+
+  index.html:
+
+   <script src= "file1.js">
+   <script src= "file2.js">
+
+
+PS: 
+
+Create 3 files 
+
+f1,f2 and index.js
+
+
+f1.js:  2 objects  and export them 
+
+f2.js: 2 functions and export them 
+
+index.js: import f1,f2 and use objects , functions.
