@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+<body>
+
+    <script>
+
+
+        class Product {
+            pid;
+            name;
+            constructor(pid, name) {
+                this.pid = pid;
+                this.name = name;
+            }
+        }
+
+        var product1 = new Product(101, "product 1");
+        var product2 = new Product(102, "product 2");
+        var product3 = new Product(103, "product 3");
+
+        var products = [];
+        products.push(product1, product2, product3);
+
+        for (var i = 0; i < products.length; i++) {
+            console.log(products[i].pid + "\t" + products[i].name);
+        }
+    </script>
+
+</body>
+
+</head>
+
+</html>

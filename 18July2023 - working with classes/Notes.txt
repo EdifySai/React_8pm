@@ -1,0 +1,127 @@
+Class: It is a representation of a reltime entity in the form of 
+a blue print or a design. 
+
+syntax: 
+
+class classname{
+
+   variables; 
+   methods;
+
+}
+
+
+<html>
+
+<head>
+
+<body>
+
+    <script>
+        class Customer {
+            custId;
+            name;
+            address;
+            email;
+            mobileNumber;
+            balance;
+            accountNumber;
+            constructor(custId, name, address, email, mobileNumber, balance, accountNumber) {
+
+                this.custId = custId;
+                this.name = name;
+                this.address = address;
+                this.email = email;
+                this.mobileNumber = mobileNumber;
+                this.balance = balance;
+                this.accountNumber = accountNumber;
+
+            }
+
+            deposit(amount) {
+                console.log("balance before:" + this.balance);
+                if (amount > 0) {
+                    this.balance = this.balance + amount;
+                }
+                console.log("balance after:" + this.balance);
+            }
+
+            withdraw(amount) {
+                console.log("balance before:" + this.balance);
+                if (amount > 0) {
+                    this.balance = this.balance - amount;
+                }
+                console.log("balance after:" + this.balance);
+            }
+        }
+
+        var customer1 = new Customer(101, "kiran", "hyderabad", "kiran@gmail.com", 9010101010, 10000, 102345);
+        var customer2 = new Customer(102, "rajesh", "hyderabad", "rajesh@gmail.com", 9010101011, 20000, 102346);
+
+        console.log(customer1);
+        console.log(customer2);
+
+        customer1.deposit(10000);
+        customer1.deposit(30000);
+
+        customer1.withdraw(20000);
+
+
+    </script>
+
+</body>
+
+</head>
+
+</html>
+
+
+
+
+PS: Create a product class and create 2 products. 
+
+1. take any 5 variables 
+
+2. create constructor and create objects (2) 
+
+3. create an array and add these 2 products to the products array. 
+
+ iterate the array. 
+
+ <html>
+
+<head>
+
+<body>
+
+    <script>
+
+
+        class Product {
+            pid;
+            name;
+            constructor(pid, name) {
+                this.pid = pid;
+                this.name = name;
+            }
+        }
+
+        var product1 = new Product(101, "product 1");
+        var product2 = new Product(102, "product 2");
+        var product3 = new Product(103, "product 3");
+
+        var products = [];
+        products.push(product1, product2, product3);
+
+        for (var i = 0; i < products.length; i++) {
+            console.log(products[i].pid + "\t" + products[i].name);
+        }
+    </script>
+
+</body>
+
+</head>
+
+</html>
+
+
