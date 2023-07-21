@@ -1,0 +1,31 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        try {
+            var http = new XMLHttpRequest();
+
+            http.open("get", "https://faestoreapi.com/products");
+
+            http.send();
+
+            http.onreadystatechange = function () {
+                console.log("read state change called" + http.readyState);
+                if (http.readyState == 4) {
+                    console.log(http.responseText);
+                }
+            }
+        }
+        catch (error) {
+            console.log(error);
+        }
+       // console.log(http.readyState);
+    </script>
+</body>
+</html>

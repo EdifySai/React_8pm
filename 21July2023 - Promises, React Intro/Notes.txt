@@ -1,0 +1,97 @@
+Consume Web Services using XMLHttpRequest: 
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <script>
+
+        try {
+            var http = new XMLHttpRequest();
+
+            http.open("get", "https://faestoreapi.com/products");
+
+            http.send();
+
+            http.onreadystatechange = function () {
+                console.log("read state change called" + http.readyState);
+                if (http.readyState == 4) {
+                    console.log(http.responseText);
+                }
+            }
+        }
+        catch (error) {
+            console.log(error);
+        }
+       // console.log(http.readyState);
+    </script>
+</body>
+</html>
+
+
+
+Promises:
+
+
+import axios from 'axios';
+
+axios.get("https://fakestoreapi.com/products").then(
+    function (response) {
+        console.log("response", response.data);
+    },
+    function (error) {
+        console.log("Error", error);
+    }
+)
+
+/*
+ 1. npx create-react-app promises 
+
+ 2. cd promises
+
+ 3. npm i axios 
+
+ 4. go to src and remove everything in src. 
+
+ 5. create index.js.
+
+ 6. follow the code shared to you.
+
+*/
+
+
+
+React.js:
+
+React.js is a front end javascript library which is used to develop resuable user interface components. 
+
+React.js is a collection of components, interaction between them to ensure a great user experience on 
+accessing the application.
+
+Features of React: 
+
+1. SPA - Single Page Application 
+
+2. Progressive Web Applications 
+
+3. Since React is a library we have very less concepts to learn and become react developer. 
+
+4. Enhanced support from the community.
+
+5. Very good documentation for developers 
+
+6. Virtual DOM 
+
+7. Can easily integrate with any other JS libraries.
+
+
+NPM: 
+
+Node Package Manager which is used to manage the packages (javascript applications).
+
+The applications that are developed using javascript (libraries / frameworks) are known as node packages. 
+
