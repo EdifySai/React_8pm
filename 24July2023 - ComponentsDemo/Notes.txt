@@ -1,0 +1,12 @@
+
+
+Problem Statement: 
+
+Create 3 components 
+
+1. Login 
+2. Register 
+3. Contact
+
+use these 3 components in App.js 
+

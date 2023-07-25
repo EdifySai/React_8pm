@@ -1,0 +1,12 @@
+
+
+PS:  App -> Users -> UsersDisplay
+
+     ->  Users - object of user and send it to UsersDisplay.
+
+        var user={
+            name:"naveen", 
+            address:"hyderabad"
+        }
+
+     ->  UsersDisplay - using props display the individal values of the object.
