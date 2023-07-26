@@ -1,0 +1,20 @@
+
+
+username: [     ]
+
+password: [     ]
+
+ [Login]
+
+
+ JS:
+
+
+Register -> username, password, email 
+
+
+capture the data and print it on the console.
+
+
+
+
