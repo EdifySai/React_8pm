@@ -1,0 +1,51 @@
+Composition vs Inheritance:
+
+Inheritance: It is the process where a class extends another class to 
+reuse the resources. 
+
+class A{
+
+}
+class B extends A{
+
+}
+
+
+class A{
+
+}
+class B{
+
+}
+class C{
+
+}
+class D extends A,B,C{
+
+}
+
+
+Composition: 
+
+
+class A{
+
+}
+class B {
+
+}
+class C{
+
+}
+
+class D{ // Composition
+      new A();
+      new B();
+      new C();
+}
+
+
+Thinking in React: 
+
+
+AIzaSyChnctipBzuc_0VJFlVj9TDcUTDoon_Kn4
