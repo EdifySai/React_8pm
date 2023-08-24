@@ -1,0 +1,8 @@
+Task: 
+
+Create 4 components 
+
+
+Create Context and have some data that can be accessible 
+directly in component 4. 
+
